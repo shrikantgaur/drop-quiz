@@ -41,8 +41,3 @@ Open `data.js` and add a new object to the `TOPICS` array:
 - `game.js` — game engine
 - `data.js` — all quiz questions (edit this!)
 
-## Portfolio tip
-Upload all 4 files to any static host:
-- **GitHub Pages** (free) — push to repo, enable Pages
-- **Netlify** (free) — drag & drop the folder
-- **Vercel** (free) — import GitHub repo
