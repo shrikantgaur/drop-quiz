@@ -6,6 +6,32 @@ dropQuiz is an interactive falling-word quiz game built with pure HTML, CSS, and
 
 Perfect for learning, practicing vocabulary, testing knowledge, and showcasing frontend development skills.
 
+## Screenshots
+
+### 🏠 Home Screen
+
+![Home Screen](screenshots/1.home.png)
+
+Browse available quiz categories and start playing instantly.
+
+### 🎯 Quiz Gameplay
+
+![Quiz Gameplay](screenshots/2.quiz.png)
+
+Answer falling-word questions before they reach the bottom and earn points.
+
+### ⭐ Practice Points
+
+![Practice Points](screenshots/3.pratice-points.png)
+
+Track your progress and improve your performance through practice.
+
+### ⏰ Time Out Screen
+
+![Time Out](screenshots/4.timeout.png)
+
+View results and retry the quiz when time runs out.
+
 ## Features
 
 * 🎮 Fast-paced falling-word gameplay
