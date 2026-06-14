@@ -2,7 +2,7 @@
 
 🚀 **Live Demo:** https://shrikantgaur.github.io/drop-quiz/
 
-VocabDrop is an interactive falling-word quiz game built with pure HTML, CSS, and JavaScript. Players must quickly identify the correct answer before it reaches the bottom of the screen.
+dropQuiz is an interactive falling-word quiz game built with pure HTML, CSS, and JavaScript. Players must quickly identify the correct answer before it reaches the bottom of the screen.
 
 Perfect for learning, practicing vocabulary, testing knowledge, and showcasing frontend development skills.
 
