@@ -1,4 +1,4 @@
-# VocabDrop 🎯 — Multi-Topic Quiz Game
+# DropQuiz 🎯 — Multi-Topic Quiz Game
 
 🚀 **Live Demo:** https://shrikantgaur.github.io/drop-quiz/
 

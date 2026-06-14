@@ -1,5 +1,5 @@
 // ════════════════════════════════════════════════════════
-//  VocabDrop — Quiz Data
+//  DropQuiz — Quiz Data
 //  Add your own topics here! Each topic needs:
 //    id, label, icon, color, description, questions[]
 //  Each question needs:
