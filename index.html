@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vocab Drop — Multi-Topic Quiz Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════ HOME SCREEN ═══════════════════════════════ -->
+<div id="screen-home" class="screen active">
+  <div class="home-bg">
+    <canvas id="bg-canvas"></canvas>
+  </div>
+  <header class="home-header">
+    <div class="logo">
+      <span class="logo-icon">🎯</span>
+      <span class="logo-text">VocabDrop</span>
+    </div>
+    <p class="logo-sub">Click the falling answer before time runs out</p>
+  </header>
+
+  <section class="topic-section">
+    <h2 class="section-title">Choose your topic</h2>
+    <div class="topic-grid" id="topic-grid"></div>
+  </section>
+
+  <footer class="home-footer">
+    <p>Made with ❤️ · Portfolio Project</p>
+  </footer>
+</div>
+
+<!-- ═══════════════════════════════ GAME SCREEN ═══════════════════════════════ -->
+<div id="screen-game" class="screen">
+  <div class="game-topbar">
+    <button class="back-btn" onclick="goHome()" title="Back to topics">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+    </button>
+    <div class="game-topic-label" id="game-topic-label">Topic</div>
+    <div class="game-stats">
+      <div class="stat-pill"><span class="stat-val" id="stat-score">0</span><span class="stat-lbl">pts</span></div>
+      <div class="stat-pill streak-pill"><span class="stat-val" id="stat-streak">0</span><span class="stat-lbl">🔥</span></div>
+      <div class="lives-row" id="lives-row">
+        <span class="heart" id="h1">♥</span>
+        <span class="heart" id="h2">♥</span>
+        <span class="heart" id="h3">♥</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timer-track"><div class="timer-fill" id="timer-fill"></div></div>
+
+  <div class="question-bar" id="question-bar">
+    <div class="q-meta" id="q-meta">Q 1 of 10</div>
+    <div class="q-text" id="q-text">Loading…</div>
+  </div>
+
+  <div class="arena-wrap">
+    <canvas id="game-canvas"></canvas>
+    <div class="feedback" id="feedback"></div>
+
+    <!-- Pause overlay -->
+    <div class="arena-overlay" id="pause-overlay" style="display:none">
+      <div class="overlay-box">
+        <h3>Paused</h3>
+        <button class="btn-primary" onclick="resumeGame()">Resume</button>
+        <button class="btn-ghost" onclick="goHome()">Quit</button>
+      </div>
+    </div>
+
+    <!-- Result overlay -->
+    <div class="arena-overlay" id="result-overlay" style="display:none">
+      <div class="overlay-box">
+        <div class="result-emoji" id="result-emoji">🎉</div>
+        <h3 id="result-title">Great!</h3>
+        <div class="result-score" id="result-score">0</div>
+        <p class="result-sub" id="result-sub">pts</p>
+        <div class="result-stats" id="result-stats"></div>
+        <button class="btn-primary" onclick="restartGame()">Play Again</button>
+        <button class="btn-ghost" onclick="goHome()">Change Topic</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
