@@ -114,6 +114,10 @@ html, body {
   padding: 16px;
   font-size: 12px; color: var(--text-muted);
 }
+.footer-text {
+  color: var(--text-muted);
+  text-decoration: none;
+}
 
 /* ══════════════════════ GAME ══════════════════════ */
 #screen-game {
